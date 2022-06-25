@@ -1,0 +1,69 @@
+/* .error { This applies the style to every element with this class (ex. class 'error'). */
+    /* color: crimson; */
+/* } */
+/* p.error { This styles all <p> tags with the class of 'error'. It doesn't style any other element types, even if they have the same class. */
+    /* color: crimson; */
+/* } */
+/* p.success { */
+    /* color: #11ff00; */
+/* } */
+/* p.success.feedback { */
+    /* color: #e165e1; */
+/* } */
+/* This applies this styling rule to all div elements with the id 'content'. Note that there can only ever by one match for this. See below. */
+/* div#content { This targets an id tag from HTML files. */
+    /* background-color: #EBEBEB; */
+    /* padding: 20px; */
+/* } */
+
+/* Note: id tags can be used for CSS styling. But they are generally only used for JavaScript. You also cannot reuse the same id for more than one element on one page. So this makes it less useful for CSS styling. */
+
+/* This targets the p elements that are children of div elements. */
+/* div p {
+    color: #ff0000;
+} */
+
+/* div .error {
+    This targets .error classes inside div elements.
+} */
+
+/* div p a {
+    This targets a tags in p tags in div tags
+} */
+
+/* This selects elements based on their attributes. eg. 'class', 'name', 'href', etc. */
+/* a[href] {
+    color: crimson;
+} */
+/* Targets specific href elements. */
+/* a[href="https://www.goldenramenbowl.com"] {
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
+
+/* This is href shorthand. It indicates that the CSS should be applied to ALL href tags with a URL contianing the specified text. */
+/* a[href*="goldenramenbowl"] {
+    color: red;
+} */
+
+/* This is shorthand to style any hreft that ends in the specified top-level domain. */
+/* a[href$=".com"] {
+    color: purple;
+} */
+
+/* INHERITANCE EXAMPLES */
+
+div {
+    color: palevioletred;
+    border: 1px solid green; /* This is not inherited. Nor is margin. */
+    margin: 40px;
+    font-weight: bold;
+}
+p {
+    border: inherit; /* This tells the child elemetn to inherit this style from its parent. */
+    margin: inherit;
+    /* We could also override the parent style by specifying styles for the child element. */
+}

@@ -41,3 +41,12 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
 - Default browser styles
     - If we don't provide styles via CSS, the browser will style elements using a default style (headers are bold and large, etc.).
     - "user agent" is the name (seen in the in-browser dev tools) of the default browser style sheet.
+- Descendent Selectors
+    - This allows us to target the child elements of parent elements.
+- Cascade (as in C in CSS)
+    - CSS properties can flow down from parent to child elements.
+    - HTML elements can inherit CSS properties that are applied to their parents.
+        - ex. A p tag inside a styled div tag would get the same style as the div tag.
+    - Not all style rules are inherited.
+    - Any style given to a child element directly will override the style inherited from the parent.
+    - If you re-style the same element (and the same property), the declaration of style that comes farthest up the page will be used.
