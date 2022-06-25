@@ -17,3 +17,27 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
     - The form fields are cleared.
     - The data from the fields is inserted into the URL (security issue I would think - there must be a better way to do this) and sent to the backend for processing.
         - It could also be processed by JavaScript on the frontend.
+- Selectors
+    - Used to target specific elements (tags, classes, etc.) on a webpage.
+- Declarations
+    - Key-value pairs that define attributes for a given element.
+- Adding CSS to HTML
+    - CSS can be added direclty to HTML pages, but that gets messy fast.
+    - CSS can also be added to a separate file that is used in conjunction with the HTML files to generate the webpage.
+- Inline Elements
+    - Line up next to each other in the browser window.
+    - Take up only as much room as the content they house needs.
+    - ex. span, img, strong, em, a, etc.
+- Block level elements
+    - Take up the whole width of the page regardless of the size of the content they house.
+    - ex. p, div, headers, li, etc.
+- Padding & Margin
+    - Margin controls the space around the element.
+    - Padding controls the spacing insdie the element.
+    - On inline elements, padding is added all the way around as expected. But margin is only added to the left and right sides of the element. Not to the top.
+- Inline Block Elements
+    - Mixes inline properties with block level properties.
+    - Causes inline elements to behave like inline (sit next to each other and only take up as much space as their content needs), but causes padding and margin to behave as if it is a block level element (padding and margin are applied to all sides of the element).
+- Default browser styles
+    - If we don't provide styles via CSS, the browser will style elements using a default style (headers are bold and large, etc.).
+    - "user agent" is the name (seen in the in-browser dev tools) of the default browser style sheet.

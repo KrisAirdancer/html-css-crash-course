@@ -1,0 +1,32 @@
+/* This is a CSS style sheet. Link to this from HTML files to style that HTML content. */
+h1 {
+    color: orange;
+    background-color: slategray;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+p {
+    color: slategray;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 1px;
+    column-count: 3;
+    column-gap: 60px;
+}
+ul { /* Borders are made up of several parts. To style them, you must apply styling rules to at least 2 of those parts. */
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: crimson; */
+    /* This is a shorthand way of applying the above three styling rules. */
+    /* border: 4px solid crimson; */
+    /* To apply styles to only a single border side... */
+    border-left: 4px solid crimson;
+    border-bottom: 8px dotted purple;
+}
+li { /* This styles the bullet list. Note that the dots are called 'discs.' */
+    list-style-type: square;
+    /* text-shadow: 2px 2px lightgray; horizontal offset, vertical offset, color */
+    text-shadow: 2px 2px #E9E9E9;
+}

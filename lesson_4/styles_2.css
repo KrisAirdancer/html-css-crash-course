@@ -1,0 +1,13 @@
+span { 
+    /* display: block; This causes the inline element to be displayed as a block level eleemnt. */
+    display: inline-block;
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 20px;
+}
+div {
+    /* display: inline; This causes the block level element to be displayed as an inline eleemnt. */
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 20px;
+}
