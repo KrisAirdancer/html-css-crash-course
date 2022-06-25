@@ -50,3 +50,7 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
     - Not all style rules are inherited.
     - Any style given to a child element directly will override the style inherited from the parent.
     - If you re-style the same element (and the same property), the declaration of style that comes farthest up the page will be used.
+- HTML 5 Semantic Tags
+    - Semantic tags tell the browser what the content on the site is.
+    - Some common semantics tags
+        - <main>, <section>, <article>, <aside>, <header>, <footer>
