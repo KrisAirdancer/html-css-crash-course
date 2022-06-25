@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+    
+    <!-- The action attribute is used by JavaScript to tell the backend what to do when the form is submitted. -->
+    <form action="">
+        <!-- The 'placeholder' tags add text that disappears when a user starts typing. -->
+        <!-- The 'for' tag links this element to the one with a matching id. -->
+        <!-- The 'required' tag prevents the form from being submitted when that field is empty. The user will be notified. -->
+        <label for="id_username">Username:</label>
+        <!-- The 'id' tag is used to reference that specific element. -->
+        <input type="text" id="id_username" name="name_username" placeholder="username" required>
+        <label for="id_email">Email:</label>
+        <!-- The 'name' attribute can be used to get the value from the input field by the server for server-side processing. -->
+        <!-- Name attributes can also be used to group elements together. Such as radio buttons. -->
+        <input type="email" name="name_email" id="id_email" placeholder="your email" required>
+        <br><br>
+        <label for="id_password">Password:</label>
+        <input type="password" id="id_password" name="name_password" placeholder="choose a password" required>
+
+        <br><br>
+
+        <!-- Radio Buttons -->
+
+        <p>Select your age:</p>
+        <!-- If we want to allow for only one button to be selected at a time, we give all of the radio buttons the same name. Radio buttons with different names can be selected together. -->
+        <input type="radio" name="name_radioButton" id="id_option_1" value="0-25">
+        <label for="id_option_1">0-25</label>
+        <input type="radio" name="name_radioButton" id="id_option_2" value="26-50">
+        <label for="id_option_1">26-50</label>
+        <input type="radio" name="name_radioButton" id="id_option_3" value="51+">
+        <label for="id_option_1">51+</label>
+
+        <br><br>
+
+        <!-- Dropdown Selection Box -->
+
+        <label for="id_security_question">Security question:</label>
+        <select name="name_security_question" id="id_security_question">
+            <option value="question_1">What is your favorite color?</option>
+            <option value="question_2">If you could be a vegetable, what would it be?</option>
+            <option value="question_3">What is your best ever security question?</option>
+        </select>
+
+        <br><br>
+
+        <label for="id_security_question_answer">Security question answer:</label>
+        <input type="text" name="name_security_question_answer" id="id_security_question_answer">
+
+        <br><br>
+
+        <!-- Text Area - a large textbox -->
+
+        <label for="id_biography">Your bio:</label><br>
+        <!-- The cols and rows set the size of the box. -->
+        <textarea name="name_biography" id="id_biography" cols="30" rows="10" placeholder="About you..."></textarea>
+
+        <br><br>
+
+        <!-- Submit Button -->
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+</body>
+</html>
