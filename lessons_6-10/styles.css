@@ -170,3 +170,69 @@ p::after {
     content: '..';
 }
 
+/* RESPONSIVE STYLES USING MEDIA QUERIES */
+
+/* This states that on devices with screens of 1400px or smaller, we apply the following styles. If the screen is larger than this, these styles don't apply and won't be applied to the webpage. We can also use the min-width property to have these styles apply to screen sizes of 1400px or larger. */
+@media screen and (max-width: 1400px) {
+
+    /* These styles override existing styles. If we don't want to override something, we don't specify it below. If a style is NOT overridden, the style that was specified outside the media query will be used. */
+
+    .banner .welcome h2 {
+        font-size: 50px;
+    }
+    nav li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .banner .welcome h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .banner .welcome {
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br {
+        display: none; /* Puts the text on one line by removing any `<br>` tags in the element. */
+    }
+    .banner .welcome h2 {
+        font-size: 25px;
+    }
+    .banner .welcome span {
+        font-size: 1em;
+    }
+    .images li {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    nav li {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header {
+        position: relative;
+    }
+    nav {
+        top: 0px;
+    }
+}
+
+
+
+
+
+

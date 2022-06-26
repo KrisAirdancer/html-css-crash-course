@@ -1,6 +1,8 @@
 # html-css-crash-course
 My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.youtube.com/watch?v=hu-q2zYwEYs&amp;list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G
 
+99% of the code in this project was provided by The Net Ninja. I only added comments and tweaked things a bit to learn from the material.
+
 
 ## Notes
 
@@ -55,7 +57,7 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
 - HTML 5 Semantic Tags
     - Semantic tags tell the browser what the content on the site is.
     - Some common semantics tags
-        - <main>, <section>, <article>, <aside>, <header>, <footer>
+        - `<main>`, `<section>`, `<article>`, `<aside>`, `<header>`, and `<footer>`
 - Position Properties
     - Static
         - The default positioning.
@@ -82,3 +84,42 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
     - [List of pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) 
 - Pseudo Elements
     - [List of pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) 
+- Responsive Design
+    - Responsive design allows a webpage to style differently when viewed on different sized screens.
+    - Media Queries
+        - Media queries are a part of responsive design.
+        - They tell the browser how to style an element based on the dimensions of the viewport.
+        - Note: Viewport != screen size. eg. I can make a browser window (view port) super tiny on a gigantic monitor (screen size).
+    - Viewport Meta Tag
+        - A part of responsive design.
+        - Tells the browser what width the viewport should be.
+    - Responsive Images
+        - A part of responsive design.
+        - Only load smaller images for mobile devices.
+    - Responsive design strategies
+        - You should design a website based on a strategy for how you expect the site to be used.
+        - One design strategy is "mobile-first."
+            - This strategy aims to build a site so that it is optimized for mobile, but can be scaled up to work on larger screens.
+            - This allows you to develop with just the essential content for the smaller screens, then add more content for larger screens.
+        - This allows the developer to strategize about how to layout the site and what elements/images/text to include and how to style them.
+        - The Viewport Method Tag (added to the HTML `<head>`) tells the browser what width the viewport should be.
+            - This tag is necessary to make the responsive design work.
+            - Here's an example from W3 Schools: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
