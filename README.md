@@ -76,3 +76,9 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
     - Positions items in front of and behind each ohter.
     - All elements have a z-index of 0 by default.
     - Positive values bring the element forward. Negative values push the elements backward.
+- Pseudo Classes
+    - Pseudo classes are used to style elements when they are in a specific state.
+    - eg. :hover, :focus, :first-child, etc.
+    - [List of pseudo classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) 
+- Pseudo Elements
+    - [List of pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) 

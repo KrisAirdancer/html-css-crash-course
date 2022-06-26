@@ -26,7 +26,6 @@ header h1 {
 }
 .banner img { /* Setting the banner image to fill the width of the screen. */
     width: 100%;
-    /* max-width: 100%; */
 }
 .banner .welcome {
     background-color: #FEB614;
@@ -118,12 +117,56 @@ footer {
     text-align: center;
 }
 
+/* PSEUDO CLASSES */
 
+/* This creates a hover effect over the nav links items. */
+nav li a:hover { /* Targets the elements when they are hovered over. */
+    text-decoration: underline;
+}
 
+/* This creates a hover effect over the images on the page. */
+.images li:hover {
+    position: relative;
+    top: -4px;
+}
 
+/* Adds a focus effect to the form at the bottom of the page. Also removes the default focus effect provided by the browser. */
+form input:focus {
+    border: 4px dashed #F63232;
+    outline: none; /* Note: Removing the default focus effect, as this statement does, isn't always the best practice b/c machines without CSS won't have any effect making it harder for the user of that machine to use the site. */
+}
 
+/* This adds an effect to the form fields tell the user that they have entered valid data into that field. */
+form input:valid {
+    border: 4px solid #71D300;
+}
 
+/* This applies a style to the first child element of a parent with at least one child. That is, the first child is the element at the top of the list in the parent's CSS block. In this case, this style looks ugly and was only coded for a demonstration. Thus, it has been commented out. */
+/* nav li:first-child {
+    border: 3px solid #F63232;
+} */
 
+/* PSEUDO ELEMENTS */
 
+/* Makes the first line of the specified paragraph a different style. */
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
+/* Makes the first letter in the specified paragraph a different style. */
+section.join p::first-letter {
+    font-size: 1.5em;
+}
+
+/* Makes text in the paragraphs highlight in red and have white font when highlighted. Using section.join p::selection will apply this to only the last paragraph on the page b/c the last section is in the section.join class. */
+p::selection {
+    background-color: #F63232;
+    color: white;
+}
+
+/* This allows us to add content after the specified element. In this case, we are adding two periods at the end of all paragraph tags on the page to create an elipses. Normally we would want to inject three periods to make an elipsies, but I'm cheating b/c I know that all paragraphs on this page end in a period so it looks nicer like this. But this would be no good if the content on the page was dynamically generated.*/
+p::after {
+    content: '..';
+}
 
