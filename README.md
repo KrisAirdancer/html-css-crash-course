@@ -5,6 +5,7 @@ My code and notes from The Net Ninja's [HTML & CSS Crash Course](https://www.you
 
 You can view the final project [here](https://krisairdancer.github.io/html-css-crash-course/lessons_6-10/index.html).
 
+This project consists of only the fontend of a website homepage. The webpage was constructed using HTML and CSS.
 
 ## Notes
 
