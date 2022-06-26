@@ -3,6 +3,8 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
 
 99% of the code in this project was provided by The Net Ninja. I only added comments and tweaked things a bit to learn from the material.
 
+You can view the final project [here](https://krisairdancer.github.io/html-css-crash-course/lessons_6-10/index.html).
+
 
 ## Notes
 
