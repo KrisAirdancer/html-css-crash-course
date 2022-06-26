@@ -1,0 +1,129 @@
+body, ul, li, h1, h2, a { /* This is what is called a CSS reset. Here we are stripping the default styles (provided by the browser) from the specified elements. This can be done to varying degrees for the desired elements. */
+    margin: 0;
+    padding: 0;
+    font-family: arial; /* This font family will cascade to all child elements of the elements targeted by this block. */
+}
+header {
+    background-color: #F63232;
+    text-align: center;
+    position: fixed;
+    padding: 5px;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1 {
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px; /* The first value is the top and bottom, the second value is for left and right. */
+    display: inline-block;
+    border-radius: 36px;
+    font-size: 1.4em;
+}
+.banner { /* The dot notation is referencing HTML clas tags. */
+    position: relative;
+}
+.banner img { /* Setting the banner image to fill the width of the screen. */
+    width: 100%;
+    /* max-width: 100%; */
+}
+.banner .welcome {
+    background-color: #FEB614;
+    color: white;
+    padding: 30px;
+    position: absolute;
+    left: 0px;
+    top: 30%;
+}
+.banner h2 {
+    font-size: 74px;
+}
+.banner h2 span {
+    font-size: 1.3em; /* em multiplies the size specifed by the parent value by the em value. */
+}
+nav {
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 60px;
+}
+nav ul {
+    white-space: nowrap;
+    /* The below two properties distribute any whitespace in this element evenly between the left and right sides of the screen. */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li { /* Despite all of the four with = 25% elements adding up to a widht of 100% of the viewport size, they still wrap. To fix this, we apply the 'white-space: nowrap;' property to the parent element. In this case, the 'nav ul'. */
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a {
+    text-decoration: none;
+    color: #4B4B4B;
+}
+nav li a.join {
+    color: #F63232;
+}
+main {
+    /* The below two lines allow the element to expand to 1200px but also shrink when viewed on smaller screens. */
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box; /* This causes the padding to be incorporated into the total width count instead of the padding being added on after 100% width is calculated, as is done by default.  */
+}
+article h2 {
+    color: #F63232;
+    font-size: 38px;
+}
+article p {
+    line-height: 1.5em;
+    color: #4B4B4B;
+}
+.images {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img {
+    max-width: 100%; /* Sets the max-width of the element to be 100% of the parent image's width. In this case, 40% */
+}
+section.join {
+    background-color: #F4F4F4;
+    text-align: center;
+    padding: 60px 30px;
+    color: #4B4B4B;
+}
+.join h2 {
+    font-size: 36px;
+}
+form input {
+    margin: 20px 0;
+    padding-inline-start: 10px, 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+footer {
+    background-color: #F63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

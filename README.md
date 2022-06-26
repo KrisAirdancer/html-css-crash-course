@@ -56,3 +56,23 @@ My code and notes from The Net Ninja's HTML &amp; CSS Crash Course: https://www.
     - Semantic tags tell the browser what the content on the site is.
     - Some common semantics tags
         - <main>, <section>, <article>, <aside>, <header>, <footer>
+- Position Properties
+    - Static
+        - The default positioning.
+    - Relative
+        - Positions the specified element a specified distance away from its original position. The original position being where it would be placed by default if no positioning was specified for that element.
+        - Itis bounded by the specified distances.
+    - Fixed
+        - The element doesn't move from where it was placed.
+        - Locks the element into a position relative to the browser window.
+    - Absolute
+        - Locks the element into a position relative to its parent element.
+    - Sticky
+        - Mixture of static and fixed.
+- Normal Docuemnt Flow
+    - The positioning used by default if no other positioning is set.
+    - This arranges elements from top to bottom above and below each other. Just as they are coded in the HTML file.
+- Z-Index
+    - Positions items in front of and behind each ohter.
+    - All elements have a z-index of 0 by default.
+    - Positive values bring the element forward. Negative values push the elements backward.
